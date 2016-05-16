@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,900italic,700,700italic,400italic,300italic,300,100italic,100);
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+.atsg-colorswatch-array {
+  position: relative;
+  overflow: hidden; }
+  .atsg-colorswatch-array .atsg-colorswatch-download {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex; }
+    .atsg-colorswatch-array .atsg-colorswatch-download-text, .atsg-colorswatch-array .atsg-colorswatch-download-dropdown select {
+      padding: 1em;
+      background: white; }
+    .atsg-colorswatch-array .atsg-colorswatch-download-text {
+      border-radius: 3px 0 0 3px; }
+    .atsg-colorswatch-array .atsg-colorswatch-download-dropdown {
+      border-radius: 0 3px 3px 0;
+      overflow: hidden;
+      border-left: 2px solid #d7d8d8;
+      background: white; }
+    .atsg-colorswatch-array .atsg-colorswatch-download-dropdown select {
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-appearance: none;
+      width: auto;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      padding-right: 40px; }
+    .atsg-colorswatch-array .atsg-colorswatch-download-dropdown select:hover {
+      background: #f1f1f1; }
+    .atsg-colorswatch-array .atsg-colorswatch-download-dropdown label {
+      margin-left: -30px;
+      color: #d7d8d8;
+      font-size: 10px; }
+
+.atsg-colorswatch-swatch {
+  width: 25vw;
+  height: 25vw;
+  float: left;
+  position: relative;
+  font-size: 14px; }
+  .atsg-colorswatch-swatch .atsg-colorswatch-colorlabel {
+    opacity: 0;
+    transition: 300ms;
+    color: #fff;
+    padding: 1em; }
+  .atsg-colorswatch-swatch .droplet-icon {
+    position: absolute;
+    top: 62.5%;
+    margin-top: -20%;
+    right: 0%;
+    opacity: 0;
+    transition: 300ms;
+    z-index: 101;
+    font-size: 24px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    width: 1em;
+    height: 1em;
+    border-radius: 100px 0px 100px 100px;
+    border: solid white 1px; }
+  .atsg-colorswatch-swatch .droplet-icon:before {
+    content: "i";
+    position: absolute;
+    color: #fff;
+    font-size: 13px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+  .atsg-colorswatch-swatch .droplet-icon.hide {
+    opacity: 1;
+    right: 5%;
+    transform: rotate(90deg);
+    border-radius: 100px 100px 100px 100px;
+    border: solid black 1px; }
+  .atsg-colorswatch-swatch .droplet-icon.hide:before {
+    content: "\00d7";
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    position: absolute;
+    color: #000; }
+  .atsg-colorswatch-swatch .atsg-colorswatch-front {
+    transition: 300ms;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front.hide {
+      opacity: 0; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25 {
+      position: relative;
+      transition: 300ms;
+      cursor: pointer; }
+      .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75 .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50 .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25 .atsg-colorswatch-colorlabel {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75 .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50 .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25 .atsg-colorswatch-colorlabel {
+      top: 0; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch {
+      width: 100%;
+      height: 100%;
+      transition: 300ms; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-tintwrapper {
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      bottom: 0;
+      transition: 300ms; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25 {
+      width: 33.33%;
+      height: 100%;
+      float: left;
+      overflow: hidden; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch:hover .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75:hover .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50:hover .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25:hover .atsg-colorswatch-colorlabel {
+      opacity: 1; }
+  .atsg-colorswatch-swatch .atsg-colorswatch-back {
+    background: #abd9ff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    padding: 0 1em; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-back ul {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .atsg-colorswatch-swatch .atsg-colorswatch-back ul .mediumlabel {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 1em;
+        display: block; }
+  .atsg-colorswatch-swatch.at-indigo {
+    background: #1E1F44; }
+    .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-mainswatch {
+      background: #1E1F44; }
+    .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-tint25 {
+      background: #353779; }
+    .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-tint50 {
+      background: #45479c; }
+    .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-tint75 {
+      background: #5d5fb8; }
+    .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-back {
+      background: #5d5fb8; }
+      .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-back ul .mediumlabel {
+        color: #1E1F44; }
+  .atsg-colorswatch-swatch.at-blue {
+    background: #0088F7; }
+    .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-mainswatch {
+      background: #0088F7; }
+    .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint25 {
+      background: #44abff; }
+    .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint50 {
+      background: #78c2ff; }
+    .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint75 {
+      background: #abd9ff; }
+    .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-back {
+      background: #abd9ff; }
+      .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-back ul .mediumlabel {
+        color: #0088F7; }
+  .atsg-colorswatch-swatch.at-teal {
+    background: #1EC6CE; }
+    .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-mainswatch {
+      background: #1EC6CE; }
+    .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-tint25 {
+      background: #53dfe6; }
+    .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-tint50 {
+      background: #7fe7ec; }
+    .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-tint75 {
+      background: #acf0f3; }
+    .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-back {
+      background: #acf0f3; }
+      .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-back ul .mediumlabel {
+        color: #1EC6CE; }
+  .atsg-colorswatch-swatch.at-green {
+    background: #1ECE8E; }
+    .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-mainswatch {
+      background: #1ECE8E; }
+    .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-tint25 {
+      background: #53e6b0; }
+    .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-tint50 {
+      background: #7fecc5; }
+    .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-tint75 {
+      background: #acf3d9; }
+    .atsg-colorswatch-swatch.at-green .atsg-colorswatch-back {
+      background: #acf3d9; }
+      .atsg-colorswatch-swatch.at-green .atsg-colorswatch-back ul .mediumlabel {
+        color: #1ECE8E; }
+  .atsg-colorswatch-swatch.at-yellow {
+    background: #FEBE12; }
+    .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-mainswatch {
+      background: #FEBE12; }
+    .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-tint25 {
+      background: #fed35e; }
+    .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-tint50 {
+      background: #ffe191; }
+    .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-tint75 {
+      background: #ffefc4; }
+    .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-back {
+      background: #ffefc4; }
+      .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-back ul .mediumlabel {
+        color: #FEBE12; }
+  .atsg-colorswatch-swatch.at-orange {
+    background: #FF6550; }
+    .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-mainswatch {
+      background: #FF6550; }
+    .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-tint25 {
+      background: #ffa89d; }
+    .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-tint50 {
+      background: #ffd5d0; }
+    .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-tint75 {
+      background: white; }
+    .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-back {
+      background: white; }
+      .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-back ul .mediumlabel {
+        color: #FF6550; }
+  .atsg-colorswatch-swatch.at-red {
+    background: #FF5050; }
+    .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-mainswatch {
+      background: #FF5050; }
+    .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-tint25 {
+      background: #ff9d9d; }
+    .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-tint50 {
+      background: #ffd0d0; }
+    .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-tint75 {
+      background: white; }
+    .atsg-colorswatch-swatch.at-red .atsg-colorswatch-back {
+      background: white; }
+      .atsg-colorswatch-swatch.at-red .atsg-colorswatch-back ul .mediumlabel {
+        color: #FF5050; }
+  .atsg-colorswatch-swatch.at-slate {
+    background: #3E3F3F; }
+    .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-mainswatch {
+      background: #3E3F3F; }
+    .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-tint25 {
+      background: #646666; }
+    .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-tint50 {
+      background: #7d7f7f; }
+    .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-tint75 {
+      background: #979999; }
+    .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-back {
+      background: #979999; }
+      .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-back ul .mediumlabel {
+        color: #3E3F3F; }
+
+.atsg-colorswatch-swatch:hover .droplet-icon {
+  opacity: 1;
+  right: 5%; }
+.atsg-colorswatch-swatch:hover .atsg-colorswatch-front-tintwrapper {
+  position: absolute;
+  width: 100%;
+  height: 38.2%;
+  bottom: 0; }
+.atsg-colorswatch-swatch:hover .atsg-colorswatch-front-mainswatch {
+  width: 100%;
+  height: 61.8%; }
