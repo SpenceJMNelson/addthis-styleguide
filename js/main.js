@@ -30,4 +30,9 @@ $( document ).ready(function() {
 			$(this).addClass('copiedmessage');
 			setTimeout(function() { $(".atsg-colorswatch-front-mainswatch, .atsg-colorswatch-front-tint75, .atsg-colorswatch-front-tint50, .atsg-colorswatch-front-tint25").removeClass('copiedmessage'); }, 1000);
 	});
+
+	$( ".atsg-colorswatch-front-mainswatch, .atsg-colorswatch-front-tint75, .atsg-colorswatch-front-tint50, .atsg-colorswatch-front-tint25" ).click(function() {
+			$(".copymessage").addClass('copiedmessage');
+			setTimeout(function() { $(".copymessage").removeClass('copiedmessage'); }, 3000);
+	});
 });

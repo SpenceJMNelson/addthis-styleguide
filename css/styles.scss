@@ -102,6 +102,7 @@ h3 {
 
 		h1 {
 			margin:0;
+			width:60%;
 		}
 	}
 
@@ -111,10 +112,14 @@ h3 {
 .tall-section {
 		height:100vh;
 		padding:0 1em;
+		background-image:url(../img/illustration-at.svg);
+		background-size:50%;
+		background-repeat: no-repeat;
+		background-position: center right;
 	}
 
 .dark-blue-section {
-	background: $at-blue;
+	background-color: $at-blue;
 	color:white;
 	padding:0 1em;
 }
@@ -129,6 +134,26 @@ h3 {
 
 	position:relative;
 	overflow: hidden;
+
+	.copymessage {
+
+		background:white;
+		opacity:0;
+		position:fixed;
+		top:20px;
+		right:0px;
+		font-size: 13px;
+		transition:300ms;
+		padding:1em 1.3em;
+		z-index: 103;
+		border-radius: 3px;
+		}
+
+	.copymessage.copiedmessage {
+		opacity:1;
+		right:20px;
+		
+		}
 
 	.atsg-colorswatch-download {
 		position:absolute;
@@ -292,6 +317,8 @@ h3 {
 			transform: translateX(-50%) translateY(-30%);
 			transition:300ms;
 		}
+
+
 
 		&-mainswatch.copiedmessage:after, &-tint75.copiedmessage:after, &-tint50.copiedmessage:after, &-tint25.copiedmessage:after {
 			opacity:1;
