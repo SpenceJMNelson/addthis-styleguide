@@ -24,3 +24,10 @@ $( document ).ready(function() {
 		$( ".at-slate .atsg-colorswatch-front, .at-slate .droplet-icon" ).toggleClass( "hide" );
 	});
 });
+
+$( document ).ready(function() {
+	$( ".atsg-colorswatch-front-mainswatch" ).click(function() {
+			$(this).addClass('copiedmessage');
+			setTimeout(function() { $( this ).removeClass('copiedmessage'); }, 100);
+	});
+});

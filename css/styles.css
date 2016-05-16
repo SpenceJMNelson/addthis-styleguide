@@ -30,9 +30,11 @@ body {
       border: none;
       border-radius: 0;
       cursor: pointer;
-      padding-right: 40px; }
+      padding-right: 40px;
+      transition: 300ms; }
     .atsg-colorswatch-array .atsg-colorswatch-download-dropdown select:hover {
-      background: #f1f1f1; }
+      background: #f1f1f1;
+      transition: 0; }
     .atsg-colorswatch-array .atsg-colorswatch-download-dropdown label {
       color: #d7d8d8;
       font-size: 10px;
@@ -105,6 +107,8 @@ body {
         bottom: 0;
         left: 0;
         width: 100%; }
+    .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch.copiedmessage:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75.copiedmessage:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50.copiedmessage:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25.copiedmessage:after {
+      content: 'copied!'; }
     .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75 .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50 .atsg-colorswatch-colorlabel, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25 .atsg-colorswatch-colorlabel {
       top: 0; }
     .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch {

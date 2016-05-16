@@ -57,10 +57,12 @@ body {
 				border-radius: 0;
 				cursor: pointer;
 				padding-right:40px;
+				transition:300ms;
 		}
 
 		&-dropdown select:hover{
 				background: lighten($at-slate, 70%);
+				transition:0;
 		}
 
 		&-dropdown label{
@@ -164,6 +166,11 @@ body {
 				left:0;
 				width:100%;
 			}
+		}
+
+		&-mainswatch.copiedmessage:after, &-tint75.copiedmessage:after, &-tint50.copiedmessage:after, &-tint25.copiedmessage:after {
+			content:'copied!';
+
 		}
 
 		&-tint75, &-tint50, &-tint25 {
