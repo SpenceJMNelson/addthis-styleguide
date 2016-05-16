@@ -14,8 +14,115 @@ body {
 	font-weight: 300;
 }
 
-.atsg-fullwidth-section {
+h1 {
+	font-size: 42px;
 
+}
+
+h2 {
+	font-size: 34px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+.word-break {
+	word-wrap: break-word;
+}
+
+
+.main-navigation {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index: 103;
+	background: white;
+	padding:1em 1em;
+	transition:300ms padding;
+
+	.main-navigation-wrapper {
+		max-width: 960px;
+		margin:0 auto;
+	}
+
+	.nav-title {
+		float:left;
+	}
+
+
+	ul {
+		float:right;
+		list-style: none;
+		padding:0;
+		margin:0;
+		text-indent: none;
+
+		li{
+			display:inline-block;
+			text-transform: uppercase;
+			letter-spacing: 1%;
+			font-size: 12px;
+			text-indent: none;
+
+			a {
+				text-decoration: none;
+				padding:.6em;
+				color: $at-slate;
+			}
+			a.nav-cta-button {
+			border:1px solid lighten($at-slate, 60%);
+			border-radius: 3px;
+			}
+		}
+
+		
+	}
+}
+
+.main-navigation:hover {
+	
+	padding:1.3em 1em;
+}
+
+.atsg-fullwidth-section {
+	overflow: hidden;
+
+	.textwrapper {
+		max-width: 960px;
+		margin:12em auto;
+
+	}
+
+	.intro-wrapper {
+		max-width: 960px;
+		margin:50vh auto 0 auto;
+		transform:translateY(-50%);
+
+		h1 {
+			margin:0;
+		}
+	}
+
+	
+}
+
+.tall-section {
+		height:100vh;
+		padding:0 1em;
+	}
+
+.dark-blue-section {
+	background: $at-blue;
+	color:white;
+	padding:0 1em;
+}
+
+.light-blue-section {
+	background: lighten($at-blue, 45%);
+	color:$at-blue;
+	padding:0 1em;
 }
 
 .atsg-colorswatch-array {
@@ -67,7 +174,7 @@ body {
 
 		&-dropdown label{
 				
-				color: lighten($at-slate, 60%);
+				color: lighten($at-slate, 50%);
 				font-size: 10px;
 				position:absolute;
 				right:20px;
@@ -169,7 +276,13 @@ body {
 		}
 
 		&-mainswatch:after, &-tint75:after, &-tint50:after, &-tint25:after {
-			content:'\1F4CB';
+			background-image: url("../img/clipboard-01.svg");
+			content:"";
+			width:.8em;
+			height:.8em;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-position: center center;
 			font-size: 48px;
 			opacity:0;
 			margin-top: 5px;
@@ -180,14 +293,13 @@ body {
 			transition:300ms;
 		}
 
-
 		&-mainswatch.copiedmessage:after, &-tint75.copiedmessage:after, &-tint50.copiedmessage:after, &-tint25.copiedmessage:after {
 			opacity:1;
 			transform: translateX(-50%) translateY(-50%);
+
 		}
 
 		&-tint75, &-tint50, &-tint25 {
-			
 			.atsg-colorswatch-colorlabel{
 				top:0;
 			}
@@ -197,8 +309,6 @@ body {
 			width:100%;
 			height:100%;
 			transition:300ms;
-
-			
 		}
 
 		&-tintwrapper {
@@ -211,9 +321,24 @@ body {
 
 		&-tint75, &-tint50, &-tint25 {
 			width:33.33%;
-			height:100%;
 			float:left;
+			height:100%;
 			overflow:hidden;
+			transform: translateY(100%);
+			transition: 300ms;
+			
+		}
+
+		&-tint75 {
+			transition-delay: 0ms;
+		}
+
+		&-tint50 {
+			transition-delay: 100ms;
+		}
+
+		&-tint25 {
+			transition-delay: 200ms;
 		}
 
 		&-mainswatch:hover, &-tint75:hover, &-tint50:hover, &-tint25:hover  {
@@ -251,19 +376,18 @@ body {
 					}
 
 					.mediumlabel {
-							text-transform:uppercase;
-							font-size: 10px;
-							margin-top: 1em;
-							display: block
-						}
-
-
+						text-transform:uppercase;
+						font-size: 10px;
+						margin-top: 1em;
+						display: block
+					}
 				}
 		}
 
 		&.at-indigo {
 			background:$at-indigo;
 			.atsg-colorswatch-front {
+				background:$at-indigo;
 				&-mainswatch {
 					background:$at-indigo;
 				}
@@ -300,6 +424,7 @@ body {
 		&.at-blue {
 			background:$at-blue;
 			.atsg-colorswatch-front {
+				background:$at-blue;
 				&-mainswatch {
 					background:$at-blue;
 				}
@@ -334,6 +459,7 @@ body {
 		&.at-teal {
 			background:$at-teal;
 			.atsg-colorswatch-front {
+				background:$at-teal;
 				&-mainswatch {
 					background:$at-teal;
 				}
@@ -367,6 +493,7 @@ body {
 		&.at-green {
 			background:$at-green;
 			.atsg-colorswatch-front {
+				background:$at-green;
 				&-mainswatch {
 					background:$at-green;
 				}
@@ -400,6 +527,7 @@ body {
 		&.at-yellow {
 			background:$at-yellow;
 			.atsg-colorswatch-front {
+				background:$at-yellow;
 				&-mainswatch {
 					background:$at-yellow;
 				}
@@ -434,6 +562,7 @@ body {
 		&.at-orange {
 			background:$at-orange;
 			.atsg-colorswatch-front {
+				background:$at-orange;
 				&-mainswatch {
 					background:$at-orange;
 				}
@@ -467,6 +596,7 @@ body {
 		&.at-red {
 			background:$at-red;
 			.atsg-colorswatch-front {
+				background:$at-red;
 				&-mainswatch {
 					background:$at-red;
 				}
@@ -501,6 +631,7 @@ body {
 		&.at-slate {
 			background:$at-slate;
 			.atsg-colorswatch-front {
+				background:$at-slate;
 				&-mainswatch {
 					background:$at-slate;
 				}
@@ -557,6 +688,10 @@ body {
 			width:100%;
 			height:61.8%;
 			
+			}
+
+			&-tint75, &-tint50, &-tint25 {
+			transform: translateX(0);
 			}
 		}
 }
