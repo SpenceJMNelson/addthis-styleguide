@@ -64,9 +64,13 @@ body {
 		}
 
 		&-dropdown label{
-				margin-left:-30px;
+				
 				color: lighten($at-slate, 60%);
-				font-size: 10px
+				font-size: 10px;
+				position:absolute;
+				right:20px;
+				top:50%;
+				transform: translateY(-50%);
 
 		}
 
@@ -106,7 +110,9 @@ body {
 				width:1em;
 				height:1em;
 				border-radius: 100px 0px 100px 100px;
-				border:solid white 1px;
+				border-style: solid;
+				border-width: 1px;
+				border-color: white;
 	}
 
 	.droplet-icon:before {
@@ -124,7 +130,8 @@ body {
 				right:5%;
 				transform:rotate(90deg);
 				border-radius: 100px 100px 100px 100px;
-				border:solid black 1px;
+				border-style: solid;
+				border-width: 1px;
 	}
 
 	.droplet-icon.hide:before {
@@ -258,6 +265,15 @@ body {
 						}
 				}
 			}
+
+			.droplet-icon.hide:before {
+				color:$at-indigo;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-indigo;
+			}
+
 		}
 
 		
@@ -285,6 +301,14 @@ body {
 						}
 				}
 			}
+
+			.droplet-icon.hide:before {
+				color:$at-blue;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-blue;
+			}
 		}
 
 		&.at-teal {
@@ -310,6 +334,13 @@ body {
 							color:$at-teal;
 						}
 				}
+			}
+			.droplet-icon.hide:before {
+				color:$at-teal;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-teal;
 			}
 		}
 
@@ -337,6 +368,13 @@ body {
 						}
 				}
 			}
+			.droplet-icon.hide:before {
+				color:$at-green;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-green;
+			}
 		}
 
 		&.at-yellow {
@@ -362,6 +400,14 @@ body {
 							color:$at-yellow;
 						}
 				}
+			}
+
+			.droplet-icon.hide:before {
+				color:$at-yellow;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-yellow;
 			}
 		}
 
@@ -389,6 +435,13 @@ body {
 						}
 				}
 			}
+			.droplet-icon.hide:before {
+				color:$at-orange;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-orange;
+			}
 		}
 
 		&.at-red {
@@ -415,6 +468,14 @@ body {
 						}
 				}
 			}
+
+			.droplet-icon.hide:before {
+				color:$at-red;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-red;
+			}
 		}
 
 		&.at-slate {
@@ -440,6 +501,13 @@ body {
 							color:$at-slate;
 						}
 				}
+			}
+			.droplet-icon.hide:before {
+				color:$at-slate;
+			}
+
+			.droplet-icon.hide {
+				border-color: $at-red;
 			}
 		}
 
