@@ -258,7 +258,7 @@ body {
 				}
 			}
 			.atsg-colorswatch-back {
-				background:lighten($at-indigo, 35%);
+				background:lighten($at-indigo, 65%);
 				ul {
 					.mediumlabel {
 							color:$at-indigo;
@@ -428,7 +428,7 @@ body {
 				}
 			}
 			.atsg-colorswatch-back {
-				background:lighten($at-orange, 35%);
+				background:lighten($at-orange, 30%);
 				ul {
 					.mediumlabel {
 							color:$at-orange;
@@ -461,7 +461,7 @@ body {
 				}
 			}
 			.atsg-colorswatch-back {
-				background:lighten($at-red, 35%);
+				background:lighten($at-red, 30%);
 				ul {
 					.mediumlabel {
 							color:$at-red;
@@ -495,7 +495,7 @@ body {
 				}
 			}
 			.atsg-colorswatch-back {
-				background:lighten($at-slate, 35%);
+				background:lighten($at-slate, 65%);
 				ul {
 					.mediumlabel {
 							color:$at-slate;
@@ -507,7 +507,7 @@ body {
 			}
 
 			.droplet-icon.hide {
-				border-color: $at-red;
+				border-color: $at-slate;
 			}
 		}
 
