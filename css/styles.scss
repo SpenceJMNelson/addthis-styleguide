@@ -168,9 +168,22 @@ body {
 			}
 		}
 
-		&-mainswatch.copiedmessage:after, &-tint75.copiedmessage:after, &-tint50.copiedmessage:after, &-tint25.copiedmessage:after {
-			content:'copied!';
+		&-mainswatch:after, &-tint75:after, &-tint50:after, &-tint25:after {
+			content:'\1F4CB';
+			font-size: 48px;
+			opacity:0;
+			margin-top: 5px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translateX(-50%) translateY(-30%);
+			transition:300ms;
+		}
 
+
+		&-mainswatch.copiedmessage:after, &-tint75.copiedmessage:after, &-tint50.copiedmessage:after, &-tint25.copiedmessage:after {
+			opacity:1;
+			transform: translateX(-50%) translateY(-50%);
 		}
 
 		&-tint75, &-tint50, &-tint25 {

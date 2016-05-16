@@ -26,8 +26,8 @@ $( document ).ready(function() {
 });
 
 $( document ).ready(function() {
-	$( ".atsg-colorswatch-front-mainswatch" ).click(function() {
+	$( ".atsg-colorswatch-front-mainswatch, .atsg-colorswatch-front-tint75, .atsg-colorswatch-front-tint50, .atsg-colorswatch-front-tint25" ).click(function() {
 			$(this).addClass('copiedmessage');
-			setTimeout(function() { $( this ).removeClass('copiedmessage'); }, 100);
+			setTimeout(function() { $(".atsg-colorswatch-front-mainswatch, .atsg-colorswatch-front-tint75, .atsg-colorswatch-front-tint50, .atsg-colorswatch-front-tint25").removeClass('copiedmessage'); }, 1000);
 	});
 });
