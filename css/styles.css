@@ -67,11 +67,7 @@ h3 {
 
 .tall-section {
   height: 100vh;
-  padding: 0 1em;
-  background-image: url(../img/illustration-at.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center right; }
+  padding: 0 1em; }
 
 .dark-blue-section {
   background-color: #0088F7;
@@ -442,3 +438,65 @@ h3 {
   height: 61.8%; }
 .atsg-colorswatch-swatch:hover .atsg-colorswatch-front-tint75, .atsg-colorswatch-swatch:hover .atsg-colorswatch-front-tint50, .atsg-colorswatch-swatch:hover .atsg-colorswatch-front-tint25 {
   transform: translateX(0); }
+
+.main-illustration {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.main-illustration circle, .main-illustration line {
+  stroke-dasharray: 800;
+  animation-name: draw;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  stroke-dashoffset: 800; }
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 800;
+    stroke-dasharray: 800; }
+  50% {
+    stroke-dashoffset: 1600;
+    stroke-dasharray: 800; }
+  100% {
+    stroke-dashoffset: 2400;
+    stroke-dasharray: 800; } }
+.main-illustration path {
+  animation-name: fillup;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  stroke-dashoffset: 800; }
+
+@keyframes fillup {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  92% {
+    opacity: 1;
+    transform: rotate(0deg);
+    transform-origin: 42% 42%; }
+  94% {
+    opacity: 1;
+    transform: rotate(-2deg);
+    transform-origin: 42% 42%; }
+  96% {
+    opacity: 1;
+    transform: rotate(2deg);
+    transform-origin: 42% 42%; }
+  98% {
+    opacity: 1;
+    transform: rotate(-2deg);
+    transform-origin: 42% 42%; }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    transform-origin: 42% 42%; } }
