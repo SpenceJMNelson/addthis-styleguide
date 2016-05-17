@@ -12,12 +12,44 @@
   font-family: clearSans;
   src: url(../fonts/ClearSans-Bold.ttf);
   font-weight: bold; }
+@font-face {
+  font-family: addThisIcons;
+  src: url(../fonts/addthis.ttf); }
 body {
   font-family: 'Avenir', sans-serif;
   color: #3E3F3F; }
 
 p {
   font-family: 'clearSans', sans-serif; }
+
+.icon-font {
+  font-family: addThisIcons, 'Arial Unicode MS';
+  padding: 0; }
+
+.nomargin {
+  margin: 0; }
+
+.icon-display {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%; }
+  .icon-display li {
+    text-align: center;
+    font-size: 30px;
+    width: 11.11vw;
+    height: 11.11vw;
+    display: inline-block;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    color: #0088F7; }
+  .icon-display li:hover {
+    color: #fff;
+    background-color: #FF6550;
+    font-size: 40px; }
 
 h1 {
   font-size: 42px; }
@@ -328,7 +360,7 @@ h3 {
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-mainswatch {
       background: #0088F7; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint25 {
-      background: #44abff; }
+      background: #45abff; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint50 {
       background: #78c2ff; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint75 {

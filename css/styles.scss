@@ -29,6 +29,11 @@ $at-slate: #3E3F3F;
     font-weight: bold;
 }
 
+@font-face {
+    font-family: addThisIcons;
+    src: url(../fonts/addthis.ttf);
+}
+
 
 body {
 	font-family: 'Avenir', sans-serif;
@@ -39,6 +44,43 @@ p {
 	font-family: 'clearSans', sans-serif;
 }
 
+.icon-font {
+	font-family: addThisIcons, 'Arial Unicode MS';
+	padding:0;
+	
+}
+
+.nomargin {
+	margin:0;
+}
+
+.icon-display {
+	
+	margin:0;
+	padding:0;
+	list-style: none;
+	width:100%;
+
+	li {
+		text-align:center;
+		font-size: 30px;
+		width:11.11vw;
+		height:11.11vw;
+		display:inline-block;
+		float:left;
+		display:flex;
+		align-items: center;
+  		justify-content: center;
+		transition:300ms;
+		color: $at-blue;
+	}
+
+	li:hover {
+		color:#fff;
+		background-color: $at-orange;
+		font-size: 40px;
+	}
+}
 
 h1 {
 	font-size: 42px;
