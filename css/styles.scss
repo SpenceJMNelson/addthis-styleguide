@@ -32,6 +32,7 @@ $at-slate: #3E3F3F;
 
 body {
 	font-family: 'Avenir', sans-serif;
+	color:$at-slate;
 }
 
 p {
@@ -53,6 +54,10 @@ h3 {
 
 .word-break {
 	word-wrap: break-word;
+}
+
+.lighten {
+	opacity:.5;
 }
 
 
@@ -83,6 +88,11 @@ h3 {
 		margin:0;
 		text-indent: none;
 
+	&:hover {
+
+
+	}
+
 		li{
 			display:inline-block;
 			text-transform: uppercase;
@@ -92,12 +102,28 @@ h3 {
 
 			a {
 				text-decoration: none;
-				padding:.6em;
+				padding:.6em 0;
 				color: $at-slate;
+				border-bottom: 1px solid transparent;
+				transition:300ms;
+				margin:0 1em;
 			}
+
+			a:hover {
+				border-bottom: 1px solid lighten($at-slate, 60%);
+				
+			}
+
 			a.nav-cta-button {
 			border:1px solid lighten($at-slate, 60%);
 			border-radius: 3px;
+			padding:.6em .6em .6em .6em;
+			}
+
+			a.nav-cta-button:hover {
+			background:lighten($at-slate, 70%);
+			padding:.6em;
+			
 			}
 		}
 
@@ -116,6 +142,7 @@ h3 {
 	.textwrapper {
 		max-width: 960px;
 		margin:12em auto;
+		padding:0 2em;
 
 	}
 
@@ -135,19 +162,41 @@ h3 {
 
 .tall-section {
 		height:100vh;
-		padding:0 1em;
+		padding:0 2em;
 	}
 
 .dark-blue-section {
 	background-color: $at-blue;
 	color:white;
-	padding:0 1em;
 }
 
 .light-blue-section {
 	background: lighten($at-blue, 45%);
 	color:$at-blue;
-	padding:0 1em;
+}
+
+
+.atsg-logo-block {
+	display:flex;
+
+	img {
+		max-width:300px;
+	}
+
+	&-light, &-dark {
+		width:100%;
+		height:33vw;
+		display:flex;
+		justify-content: center;
+	}
+
+	&-light {
+		width:100%;
+	}
+
+	&-dark {
+		background:$at-slate;
+	}
 }
 
 .atsg-colorswatch-array {
@@ -432,7 +481,7 @@ h3 {
 		}
 
 		&.at-indigo {
-			background:$at-indigo;
+			
 			.atsg-colorswatch-front {
 				background:$at-indigo;
 				&-mainswatch {
@@ -469,7 +518,7 @@ h3 {
 
 		
 		&.at-blue {
-			background:$at-blue;
+			
 			.atsg-colorswatch-front {
 				background:$at-blue;
 				&-mainswatch {
@@ -504,7 +553,7 @@ h3 {
 		}
 
 		&.at-teal {
-			background:$at-teal;
+			
 			.atsg-colorswatch-front {
 				background:$at-teal;
 				&-mainswatch {
@@ -538,7 +587,7 @@ h3 {
 		}
 
 		&.at-green {
-			background:$at-green;
+			
 			.atsg-colorswatch-front {
 				background:$at-green;
 				&-mainswatch {
@@ -572,7 +621,7 @@ h3 {
 		}
 
 		&.at-yellow {
-			background:$at-yellow;
+			
 			.atsg-colorswatch-front {
 				background:$at-yellow;
 				&-mainswatch {
@@ -607,7 +656,7 @@ h3 {
 		}
 
 		&.at-orange {
-			background:$at-orange;
+			
 			.atsg-colorswatch-front {
 				background:$at-orange;
 				&-mainswatch {
@@ -641,7 +690,7 @@ h3 {
 		}
 
 		&.at-red {
-			background:$at-red;
+			
 			.atsg-colorswatch-front {
 				background:$at-red;
 				&-mainswatch {
@@ -676,7 +725,7 @@ h3 {
 		}
 
 		&.at-slate {
-			background:$at-slate;
+			
 			.atsg-colorswatch-front {
 				background:$at-slate;
 				&-mainswatch {
@@ -744,7 +793,7 @@ h3 {
 }
 
 .main-illustration {
-	width:50%;
+	width:40%;
 	position:absolute;
 	right:20px;
 	top:50%;
@@ -865,8 +914,36 @@ a.button {
 		background-color:$at-blue;
 		color:#fff;
 		text-decoration: none;
-		padding:1em;
+		padding:1em 1.6em;
 		border-radius: 100px;
 		display: inline-block;
+		margin:1em 0;
+		transition:300ms;
+
+		&:hover {
+			background-color: lighten($at-blue, 10%);
+		}
 	}
+
+
+
+.single-spacer {
+	width:100%;
+	height:2em;
+}
+
+.single-spacer {
+	width:100%;
+	height:4em;
+}
+
+.avenir-display {
+	font-size: 55px;
+	color: $at-blue;
+	display:block;
+
+	&.smaller {
+		font-size: 34px;
+	}
+}
 
