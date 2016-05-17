@@ -7,16 +7,40 @@ $at-orange: #FF6550;
 $at-red: #FF5050;
 $at-slate: #3E3F3F;
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,900,900italic,700,700italic,400italic,300italic,300,100italic,100);
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/AvenirLTStd-Heavy.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: clearSans;
+    src: url(../fonts/ClearSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: clearSans;
+    src: url(../fonts/ClearSans-Bold.ttf);
+    font-weight: bold;
+}
+
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-family: 'Avenir', sans-serif;
 }
+
+p {
+	font-family: 'clearSans', sans-serif;
+}
+
 
 h1 {
 	font-size: 42px;
-
 }
 
 h2 {
@@ -720,9 +744,9 @@ h3 {
 }
 
 .main-illustration {
-	width:40%;
+	width:50%;
 	position:absolute;
-	right:0;
+	right:20px;
 	top:50%;
 	transform:translateY(-50%);
 }
@@ -808,4 +832,41 @@ h3 {
 	
   
 }
+
+.video-section {
+	position: relative;
+
+}
+
+.video-screen {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba($at-indigo,.9);
+}
+
+.video-screen-content {
+	max-width: 960px;
+	width:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+	color: #fff;
+	text-align: center;
+
+	
+}
+
+
+a.button {
+		background-color:$at-blue;
+		color:#fff;
+		text-decoration: none;
+		padding:1em;
+		border-radius: 100px;
+		display: inline-block;
+	}
 
