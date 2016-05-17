@@ -939,11 +939,19 @@ a.button {
 
 .avenir-display {
 	font-size: 55px;
+	line-height: 55px;
 	color: $at-blue;
 	display:block;
+	max-width: 640px;
+	margin-bottom:1em;
 
 	&.smaller {
 		font-size: 34px;
+		line-height: 42px;
 	}
+}
+
+.source-display {
+	columns:2;
 }
 

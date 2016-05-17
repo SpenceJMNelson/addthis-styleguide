@@ -568,7 +568,14 @@ a.button {
 
 .avenir-display {
   font-size: 55px;
+  line-height: 55px;
   color: #0088F7;
-  display: block; }
+  display: block;
+  max-width: 640px;
+  margin-bottom: 1em; }
   .avenir-display.smaller {
-    font-size: 34px; }
+    font-size: 34px;
+    line-height: 42px; }
+
+.source-display {
+  columns: 2; }
