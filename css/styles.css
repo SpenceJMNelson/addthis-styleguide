@@ -76,7 +76,7 @@ p {
   .icon-display li:nth-child(8n+8):hover {
     background-color: #3E3F3F;
     transform: rotate(-3deg) scale(1.1); }
-  .icon-display li:nth-child(13):hover, .icon-display li:nth-child(20):hover, .icon-display li:nth-child(27):hover {
+  .icon-display li:nth-child(22):hover {
     background-color: transparent; }
 
 h1 {
