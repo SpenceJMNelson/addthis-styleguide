@@ -53,21 +53,29 @@ p {
   .icon-display li:hover {
     color: #fff; }
   .icon-display li:nth-child(8n+1):hover {
-    background-color: #1E1F44; }
+    background-color: #1E1F44;
+    transform: rotate(5deg) scale(1.1); }
   .icon-display li:nth-child(8n+2):hover {
-    background-color: #0088F7; }
+    background-color: #0088F7;
+    transform: rotate(-1deg) scale(1.1); }
   .icon-display li:nth-child(8n+3):hover {
-    background-color: #1EC6CE; }
+    background-color: #1EC6CE;
+    transform: rotate(2deg) scale(1.1); }
   .icon-display li:nth-child(8n+4):hover {
-    background-color: #FF6550; }
+    background-color: #FF6550;
+    transform: rotate(4deg) scale(1.1); }
   .icon-display li:nth-child(8n+5):hover {
-    background-color: #FF5050; }
+    background-color: #FF5050;
+    transform: rotate(-5deg) scale(1.1); }
   .icon-display li:nth-child(8n+6):hover {
-    background-color: #FEBE12; }
+    background-color: #FEBE12;
+    transform: rotate(-2deg) scale(1.1); }
   .icon-display li:nth-child(8n+7):hover {
-    background-color: #1ECE8E; }
+    background-color: #1ECE8E;
+    transform: rotate(3deg) scale(1.1); }
   .icon-display li:nth-child(8n+8):hover {
-    background-color: #3E3F3F; }
+    background-color: #3E3F3F;
+    transform: rotate(-3deg) scale(1.1); }
   .icon-display li:nth-child(13):hover, .icon-display li:nth-child(20):hover, .icon-display li:nth-child(27):hover {
     background-color: transparent; }
 
@@ -95,6 +103,9 @@ h3 {
   background: white;
   padding: 1em 1em;
   transition: 300ms padding; }
+  .main-navigation a {
+    color: #3E3F3F;
+    text-decoration: none; }
   .main-navigation .main-navigation-wrapper {
     max-width: 960px;
     margin: 0 auto; }
@@ -113,7 +124,6 @@ h3 {
       font-size: 11px;
       text-indent: none; }
       .main-navigation ul li a {
-        text-decoration: none;
         padding: .6em 0;
         color: #3E3F3F;
         border-bottom: 1px solid transparent;
