@@ -73,13 +73,54 @@ p {
   		justify-content: center;
 		transition:300ms;
 		color: $at-blue;
+
+		
 	}
 
-	li:hover {
-		color:#fff;
-		background-color: $at-orange;
-		font-size: 40px;
+	li.wide {
+		width:33.33vw;
+		.button {
+			font-size: 16px
+		}
 	}
+
+
+
+	li:hover {  
+  		color:#fff;
+	}
+
+	li:nth-child(8n+1):hover {  
+  		background-color: $at-indigo;
+	}
+	li:nth-child(8n+2):hover {  
+  		background-color: $at-blue;
+	}
+	li:nth-child(8n+3):hover {  
+  		background-color: $at-teal;
+	}
+	li:nth-child(8n+4):hover {  
+  		background-color: $at-orange;
+	}
+	li:nth-child(8n+5):hover {  
+  		background-color: $at-red;
+	}
+	li:nth-child(8n+6):hover {  
+  		background-color: $at-yellow;
+	}
+	li:nth-child(8n+7):hover {  
+  		background-color: $at-green;
+	}
+
+	li:nth-child(8n+8):hover {  
+  		background-color: $at-slate;
+	}
+
+	li:nth-child(13):hover,li:nth-child(20):hover,li:nth-child(27):hover {  
+  		background-color: transparent;
+	}
+
+
 }
 
 h1 {

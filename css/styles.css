@@ -46,10 +46,30 @@ p {
     justify-content: center;
     transition: 300ms;
     color: #0088F7; }
+  .icon-display li.wide {
+    width: 33.33vw; }
+    .icon-display li.wide .button {
+      font-size: 16px; }
   .icon-display li:hover {
-    color: #fff;
-    background-color: #FF6550;
-    font-size: 40px; }
+    color: #fff; }
+  .icon-display li:nth-child(8n+1):hover {
+    background-color: #1E1F44; }
+  .icon-display li:nth-child(8n+2):hover {
+    background-color: #0088F7; }
+  .icon-display li:nth-child(8n+3):hover {
+    background-color: #1EC6CE; }
+  .icon-display li:nth-child(8n+4):hover {
+    background-color: #FF6550; }
+  .icon-display li:nth-child(8n+5):hover {
+    background-color: #FF5050; }
+  .icon-display li:nth-child(8n+6):hover {
+    background-color: #FEBE12; }
+  .icon-display li:nth-child(8n+7):hover {
+    background-color: #1ECE8E; }
+  .icon-display li:nth-child(8n+8):hover {
+    background-color: #3E3F3F; }
+  .icon-display li:nth-child(13):hover, .icon-display li:nth-child(20):hover, .icon-display li:nth-child(27):hover {
+    background-color: transparent; }
 
 h1 {
   font-size: 42px; }
