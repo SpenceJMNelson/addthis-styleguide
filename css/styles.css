@@ -147,8 +147,6 @@ h3 {
     max-width: 960px;
     margin: 12em auto;
     padding: 0 2em; }
-  .atsg-fullwidth-section p {
-    max-width: 40em; }
   .atsg-fullwidth-section .intro-wrapper {
     max-width: 960px;
     margin: 50vh auto 0 auto;
@@ -172,6 +170,8 @@ h3 {
 .light-blue-section {
   background: #def0ff;
   color: #0088F7; }
+  .light-blue-section p {
+    max-width: 40em; }
 
 .atsg-logo-block {
   display: flex; }
@@ -186,7 +186,7 @@ h3 {
     .atsg-logo-block-light svg, .atsg-logo-block-dark svg {
       width: 50%; }
       .atsg-logo-block-light svg .logo-name, .atsg-logo-block-light svg .addthis-icon, .atsg-logo-block-light svg .logo-name-clipping-mask, .atsg-logo-block-dark svg .logo-name, .atsg-logo-block-dark svg .addthis-icon, .atsg-logo-block-dark svg .logo-name-clipping-mask {
-        transition: 600ms;
+        transition: 500ms;
         transform-origin: 50% 50%; }
   .atsg-logo-block-light:hover, .atsg-logo-block-dark:hover {
     width: 100%; }

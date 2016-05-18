@@ -244,9 +244,7 @@ h3 {
 
 	}
 
-	p {
-		max-width: 40em;
-	}
+
 
 	.intro-wrapper {
 		max-width: 960px;
@@ -282,6 +280,9 @@ h3 {
 .light-blue-section {
 	background: lighten($at-blue, 45%);
 	color:$at-blue;
+	p {
+		max-width: 40em;
+	}
 }
 
 
@@ -304,7 +305,7 @@ h3 {
 			width:50%;
 
 			.logo-name,.addthis-icon,.logo-name-clipping-mask {
-				transition:600ms;
+				transition:500ms;
 				transform-origin: 50% 50%;
 
 			}
