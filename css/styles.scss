@@ -185,6 +185,7 @@ h3 {
 		padding:0;
 		margin:0;
 		text-indent: none;
+		
 
 	&:hover {
 
@@ -243,10 +244,21 @@ h3 {
 
 	}
 
+	p {
+		max-width: 40em;
+	}
+
 	.intro-wrapper {
 		max-width: 960px;
 		margin:50vh auto 0 auto;
 		transform:translateY(-50%);
+
+		@media screen and (max-width: 480px) {
+			& {
+				margin:0 auto;
+				transform:translateY(0);
+			}
+		}
 
 		h1 {
 			margin:0;
@@ -287,10 +299,40 @@ h3 {
 		height:33vw;
 		display:flex;
 		justify-content: center;
+
+		svg {
+			width:50%;
+
+			.logo-name,.addthis-icon,.logo-name-clipping-mask {
+				transition:600ms;
+				transform-origin: 50% 50%;
+
+			}
+
+
+		}
 	}
 
-	&-light {
+	 &-light:hover, &-dark:hover {
 		width:100%;
+
+		svg {
+
+			.logo-name {
+				transform:translateX(-100%);
+				opacity:0;
+			}
+
+			.addthis-icon {
+				transform: scale(2) translateX(100%) rotate(-270deg);
+
+			}
+
+			.logo-name-clipping-mask {
+				transform:translateX(40px);
+			}
+
+		}
 	}
 
 	&-dark {
@@ -390,6 +432,20 @@ h3 {
 	float:left;
 	position:relative;
 	font-size: 14px;
+
+	@media screen and (max-width: 640px) {
+		& {
+			width:50vw;
+			height:50vw;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		& {
+			width:100vw;
+			height:100vw;
+		}
+	}
 
 	.atsg-colorswatch-colorlabel{
 		opacity: 0;
@@ -897,7 +953,19 @@ h3 {
 	right:20px;
 	top:50%;
 	transform:translateY(-50%);
+
+	@media screen and (max-width: 480px) {
+		& {
+			width:100%;
+			position:static;
+			transform:translateY(0%);
+			top:0;
+			margin:0 auto;
+		}
+	}
 }
+
+
 
 .main-illustration circle, .main-illustration line {
 	stroke-dasharray: 800;
@@ -1053,4 +1121,5 @@ a.button {
 .source-display {
 	columns:2;
 }
+
 

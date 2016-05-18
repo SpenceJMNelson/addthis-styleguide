@@ -147,10 +147,16 @@ h3 {
     max-width: 960px;
     margin: 12em auto;
     padding: 0 2em; }
+  .atsg-fullwidth-section p {
+    max-width: 40em; }
   .atsg-fullwidth-section .intro-wrapper {
     max-width: 960px;
     margin: 50vh auto 0 auto;
     transform: translateY(-50%); }
+    @media screen and (max-width: 480px) {
+      .atsg-fullwidth-section .intro-wrapper {
+        margin: 0 auto;
+        transform: translateY(0); } }
     .atsg-fullwidth-section .intro-wrapper h1 {
       margin: 0;
       width: 60%; }
@@ -177,8 +183,20 @@ h3 {
     height: 33vw;
     display: flex;
     justify-content: center; }
-  .atsg-logo-block-light {
+    .atsg-logo-block-light svg, .atsg-logo-block-dark svg {
+      width: 50%; }
+      .atsg-logo-block-light svg .logo-name, .atsg-logo-block-light svg .addthis-icon, .atsg-logo-block-light svg .logo-name-clipping-mask, .atsg-logo-block-dark svg .logo-name, .atsg-logo-block-dark svg .addthis-icon, .atsg-logo-block-dark svg .logo-name-clipping-mask {
+        transition: 600ms;
+        transform-origin: 50% 50%; }
+  .atsg-logo-block-light:hover, .atsg-logo-block-dark:hover {
     width: 100%; }
+    .atsg-logo-block-light:hover svg .logo-name, .atsg-logo-block-dark:hover svg .logo-name {
+      transform: translateX(-100%);
+      opacity: 0; }
+    .atsg-logo-block-light:hover svg .addthis-icon, .atsg-logo-block-dark:hover svg .addthis-icon {
+      transform: scale(2) translateX(100%) rotate(-270deg); }
+    .atsg-logo-block-light:hover svg .logo-name-clipping-mask, .atsg-logo-block-dark:hover svg .logo-name-clipping-mask {
+      transform: translateX(40px); }
   .atsg-logo-block-dark {
     background: #3E3F3F; }
 
@@ -242,6 +260,14 @@ h3 {
   float: left;
   position: relative;
   font-size: 14px; }
+  @media screen and (max-width: 640px) {
+    .atsg-colorswatch-swatch {
+      width: 50vw;
+      height: 50vw; } }
+  @media screen and (max-width: 400px) {
+    .atsg-colorswatch-swatch {
+      width: 100vw;
+      height: 100vw; } }
   .atsg-colorswatch-swatch .atsg-colorswatch-colorlabel {
     opacity: 0;
     transition: 300ms;
@@ -532,6 +558,13 @@ h3 {
   right: 20px;
   top: 50%;
   transform: translateY(-50%); }
+  @media screen and (max-width: 480px) {
+    .main-illustration {
+      width: 100%;
+      position: static;
+      transform: translateY(0%);
+      top: 0;
+      margin: 0 auto; } }
 
 .main-illustration circle, .main-illustration line {
   stroke-dasharray: 800;
