@@ -131,6 +131,9 @@ h3 {
   padding: 1em 1em;
   -webkit-transition: 300ms padding;
   transition: 300ms padding; }
+  @media screen and (max-width: 640px) {
+    .main-navigation {
+      display: none; } }
   .main-navigation a {
     color: #3E3F3F;
     text-decoration: none; }
@@ -176,6 +179,9 @@ h3 {
     max-width: 960px;
     margin: 12em auto;
     padding: 0 2em; }
+    @media screen and (max-width: 640px) {
+      .atsg-fullwidth-section .textwrapper {
+        margin: 4em auto; } }
   .atsg-fullwidth-section .intro-wrapper {
     max-width: 960px;
     margin: 50vh auto 0 auto;
@@ -204,7 +210,8 @@ h3 {
   background: #def0ff;
   color: #0088F7; }
   .light-blue-section p {
-    max-width: 40em; }
+    max-width: 40em;
+    color: #2ba0ff; }
 
 .atsg-logo-block {
   filter: alpha(opacity=0);
@@ -219,6 +226,7 @@ h3 {
   .atsg-logo-block-light, .atsg-logo-block-dark {
     width: 100%;
     height: 50vw;
+    min-height: 400px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -230,8 +238,8 @@ h3 {
     .atsg-logo-block-light svg, .atsg-logo-block-dark svg {
       width: 50%; }
       .atsg-logo-block-light svg .logo-name, .atsg-logo-block-light svg .addthis-icon, .atsg-logo-block-light svg .logo-name-clipping-mask, .atsg-logo-block-dark svg .logo-name, .atsg-logo-block-dark svg .addthis-icon, .atsg-logo-block-dark svg .logo-name-clipping-mask {
-        -webkit-transition: 500ms;
-        transition: 500ms;
+        -webkit-transition: 600ms;
+        transition: 600ms;
         -webkit-transform-origin: 50% 50%;
         -ms-transform-origin: 50% 50%;
         transform-origin: 50% 50%; }
@@ -286,6 +294,7 @@ h3 {
   position: absolute;
   left: 50%;
   top: 50%;
+  font-size: 14px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -303,6 +312,9 @@ h3 {
     background: white; }
   .atsg-colorswatch-download-text {
     border-radius: 3px 0 0 3px; }
+    @media screen and (max-width: 640px) {
+      .atsg-colorswatch-download-text {
+        border-radius: 3px 3px 0 0; } }
   .atsg-colorswatch-download-dropdown {
     border-radius: 0 3px 3px 0;
     overflow: hidden;
@@ -312,7 +324,8 @@ h3 {
     @media screen and (max-width: 640px) {
       .atsg-colorswatch-download-dropdown {
         border-left: none;
-        border-top: 2px solid #f1f1f1; } }
+        border-top: 2px solid #f1f1f1;
+        border-radius: 0 0 3px 3px; } }
   .atsg-colorswatch-download-dropdown select {
     -moz-appearance: none;
     appearance: none;
@@ -323,7 +336,8 @@ h3 {
     cursor: pointer;
     padding-right: 40px;
     -webkit-transition: 300ms;
-    transition: 300ms; }
+    transition: 300ms;
+    width: 100%; }
   .atsg-colorswatch-download-dropdown select:hover {
     background: #f1f1f1;
     -webkit-transition: 0;
@@ -349,11 +363,10 @@ h3 {
   @media screen and (max-width: 640px) {
     .atsg-colorswatch-swatch {
       width: 50vw;
-      height: 50vw; } }
+      height: 200px; } }
   @media screen and (max-width: 400px) {
     .atsg-colorswatch-swatch {
-      width: 100vw;
-      height: 100vw; } }
+      width: 100vw; } }
   .atsg-colorswatch-swatch .atsg-colorswatch-colorlabel {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -450,6 +463,10 @@ h3 {
       transform: translateX(-50%) translateY(-30%);
       -webkit-transition: 300ms;
       transition: 300ms; }
+      @media screen and (max-width: 640px) {
+        .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25:after {
+          width: .6em;
+          height: .6em; } }
     .atsg-colorswatch-swatch .atsg-colorswatch-front-mainswatch.copiedmessage:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint75.copiedmessage:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint50.copiedmessage:after, .atsg-colorswatch-swatch .atsg-colorswatch-front-tint25.copiedmessage:after {
       opacity: 1;
       filter: alpha(opacity=100);
