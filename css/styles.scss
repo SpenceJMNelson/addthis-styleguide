@@ -1,11 +1,42 @@
 $at-indigo: #1E1F44;
+	$at-indigo-75: #3d3f8b;
+	$at-indigo-50: #6f71bf;
+	$at-indigo-25: #b5b7df;
+
 $at-blue: #0088F7;
+	$at-blue-75: #35a4ff;
+	$at-blue-50: #72c0ff;
+	$at-blue-25: #b0dbff;
+
 $at-teal: #1EC6CE;
+	$at-teal-75: #45dde4;
+	$at-teal-50: #7be7ec;
+	$at-teal-25: #b0f0f4;
+
 $at-green: #1ECE8E;
+	$at-green-75: #4ae5ac;
+	$at-green-50: #84edc7;
+	$at-green-25: #bdf5e1;
+
 $at-yellow: #FEBE12;
+	$at-yellow-75: #fed054;
+	$at-yellow-50: #ffe296;
+	$at-yellow-25: #fff4d8;
+
 $at-orange: #FF6550;
+	$at-orange-75: #ff8d7e;
+	$at-orange-50: #ffb6ac;
+	$at-orange-25: #ffdeda;
+
 $at-red: #FF5050;
+	$at-red-75: #ff7e7e;
+	$at-red-50: #ffacac;
+	$at-red-25: #ffdada;
+
 $at-slate: #3E3F3F;
+	$at-slate-75: #717272;
+	$at-slate-50: #a4a5a5;
+	$at-slate-25: #d7d8d8;
 
 @font-face {
     font-family: Avenir;
@@ -161,14 +192,29 @@ p {
 
 h1 {
 	font-size: 42px;
+	@media screen and (min-width: 1280px) {
+				& {
+					font-size: 68px
+				}
+	}
 }
 
 h2 {
 	font-size: 34px;
+	@media screen and (min-width: 1280px) {
+				& {
+					font-size: 55px
+				}
+	}
 }
 
 h3 {
 	font-size: 26px;
+	@media screen and (min-width: 1280px) {
+				& {
+					font-size: 42px
+				}
+	}
 }
 
 .word-break {
@@ -803,17 +849,17 @@ h3 {
 					background:$at-indigo;
 				}
 				&-tint25 {
-					background:lighten($at-indigo, 15%);
+					background:$at-indigo-25;
 				}
 				&-tint50 {
-					background:lighten($at-indigo, 25%);
+					background:$at-indigo-50;
 				}
 				&-tint75 {
-					background:lighten($at-indigo, 35%);
+					background:$at-indigo-75;
 				}
 			}
 			.atsg-colorswatch-back {
-				background:lighten($at-indigo, 65%);
+				background:$at-indigo-25;
 				ul {
 					.mediumlabel {
 							color:$at-indigo;
@@ -840,13 +886,13 @@ h3 {
 					background:$at-blue;
 				}
 				&-tint25 {
-					background:lighten($at-blue, 15%);
+					background:$at-blue-25;
 				}
 				&-tint50 {
-					background:lighten($at-blue, 25%);
+					background:$at-blue-50;
 				}
 				&-tint75 {
-					background:lighten($at-blue, 35%);
+					background:$at-blue-75;
 				}
 			}
 			.atsg-colorswatch-back {
@@ -875,13 +921,13 @@ h3 {
 					background:$at-teal;
 				}
 				&-tint25 {
-					background:lighten($at-teal, 15%);
+					background:$at-teal-25;
 				}
 				&-tint50 {
-					background:lighten($at-teal, 25%);
+					background:$at-teal-50;
 				}
 				&-tint75 {
-					background:lighten($at-teal, 35%);
+					background:$at-teal-75;
 				}
 			}
 			.atsg-colorswatch-back {
@@ -909,13 +955,13 @@ h3 {
 					background:$at-green;
 				}
 				&-tint25 {
-					background:lighten($at-green, 15%);
+					background:$at-green-25;
 				}
 				&-tint50 {
-					background:lighten($at-green, 25%);
+					background:$at-green-50;
 				}
 				&-tint75 {
-					background:lighten($at-green, 35%);
+					background:$at-green-75;
 				}
 			}
 			.atsg-colorswatch-back {
@@ -943,13 +989,13 @@ h3 {
 					background:$at-yellow;
 				}
 				&-tint25 {
-					background:lighten($at-yellow, 15%);
+					background:$at-yellow-25;
 				}
 				&-tint50 {
-					background:lighten($at-yellow, 25%);
+					background:$at-yellow-50;
 				}
 				&-tint75 {
-					background:lighten($at-yellow, 35%);
+					background:$at-yellow-75;
 				}
 			}
 			.atsg-colorswatch-back {
@@ -978,13 +1024,13 @@ h3 {
 					background:$at-orange;
 				}
 				&-tint25 {
-					background:lighten($at-orange, 15%);
+					background:$at-orange-25;
 				}
 				&-tint50 {
-					background:lighten($at-orange, 25%);
+					background:$at-orange-50;
 				}
 				&-tint75 {
-					background:lighten($at-orange, 35%);
+					background:$at-orange-75;
 				}
 			}
 			.atsg-colorswatch-back {
@@ -1012,13 +1058,13 @@ h3 {
 					background:$at-red;
 				}
 				&-tint25 {
-					background:lighten($at-red, 15%);
+					background:$at-red-25;
 				}
 				&-tint50 {
-					background:lighten($at-red, 25%);
+					background:$at-red-50;
 				}
 				&-tint75 {
-					background:lighten($at-red, 35%);
+					background:$at-red-75;
 				}
 			}
 			.atsg-colorswatch-back {
@@ -1047,13 +1093,13 @@ h3 {
 					background:$at-slate;
 				}
 				&-tint25 {
-					background:lighten($at-slate, 15%);
+					background:$at-slate-25;
 				}
 				&-tint50 {
-					background:lighten($at-slate, 25%);
+					background:$at-slate-50;
 				}
 				&-tint75 {
-					background:lighten($at-slate, 35%);
+					background:$at-slate-75;
 				}
 			}
 			.atsg-colorswatch-back {

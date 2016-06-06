@@ -107,12 +107,21 @@ p {
 
 h1 {
   font-size: 42px; }
+  @media screen and (min-width: 1280px) {
+    h1 {
+      font-size: 68px; } }
 
 h2 {
   font-size: 34px; }
+  @media screen and (min-width: 1280px) {
+    h2 {
+      font-size: 55px; } }
 
 h3 {
   font-size: 26px; }
+  @media screen and (min-width: 1280px) {
+    h3 {
+      font-size: 42px; } }
 
 .word-break {
   word-wrap: break-word; }
@@ -539,13 +548,13 @@ h3 {
     .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-mainswatch {
       background: #1E1F44; }
     .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-tint25 {
-      background: #353779; }
+      background: #b5b7df; }
     .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-tint50 {
-      background: #45479c; }
+      background: #6f71bf; }
     .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-front-tint75 {
-      background: #5d5fb8; }
+      background: #3d3f8b; }
   .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-back {
-    background: #c7c8e6; }
+    background: #b5b7df; }
     .atsg-colorswatch-swatch.at-indigo .atsg-colorswatch-back ul .mediumlabel {
       color: #1E1F44; }
   .atsg-colorswatch-swatch.at-indigo .droplet-icon.hide:before {
@@ -557,11 +566,11 @@ h3 {
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-mainswatch {
       background: #0088F7; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint25 {
-      background: #45abff; }
+      background: #b0dbff; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint50 {
-      background: #78c2ff; }
+      background: #72c0ff; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-front-tint75 {
-      background: #abd9ff; }
+      background: #35a4ff; }
   .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-back {
     background: #abd9ff; }
     .atsg-colorswatch-swatch.at-blue .atsg-colorswatch-back ul .mediumlabel {
@@ -575,11 +584,11 @@ h3 {
     .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-mainswatch {
       background: #1EC6CE; }
     .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-tint25 {
-      background: #53dfe6; }
+      background: #b0f0f4; }
     .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-tint50 {
-      background: #7fe7ec; }
+      background: #7be7ec; }
     .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-front-tint75 {
-      background: #acf0f3; }
+      background: #45dde4; }
   .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-back {
     background: #acf0f3; }
     .atsg-colorswatch-swatch.at-teal .atsg-colorswatch-back ul .mediumlabel {
@@ -593,11 +602,11 @@ h3 {
     .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-mainswatch {
       background: #1ECE8E; }
     .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-tint25 {
-      background: #53e6b0; }
+      background: #bdf5e1; }
     .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-tint50 {
-      background: #7fecc5; }
+      background: #84edc7; }
     .atsg-colorswatch-swatch.at-green .atsg-colorswatch-front-tint75 {
-      background: #acf3d9; }
+      background: #4ae5ac; }
   .atsg-colorswatch-swatch.at-green .atsg-colorswatch-back {
     background: #acf3d9; }
     .atsg-colorswatch-swatch.at-green .atsg-colorswatch-back ul .mediumlabel {
@@ -611,11 +620,11 @@ h3 {
     .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-mainswatch {
       background: #FEBE12; }
     .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-tint25 {
-      background: #fed35e; }
+      background: #fff4d8; }
     .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-tint50 {
-      background: #ffe191; }
+      background: #ffe296; }
     .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-front-tint75 {
-      background: #ffefc4; }
+      background: #fed054; }
   .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-back {
     background: #ffefc4; }
     .atsg-colorswatch-swatch.at-yellow .atsg-colorswatch-back ul .mediumlabel {
@@ -629,11 +638,11 @@ h3 {
     .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-mainswatch {
       background: #FF6550; }
     .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-tint25 {
-      background: #ffa89d; }
+      background: #ffdeda; }
     .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-tint50 {
-      background: #ffd5d0; }
+      background: #ffb6ac; }
     .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-front-tint75 {
-      background: white; }
+      background: #ff8d7e; }
   .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-back {
     background: #ffece9; }
     .atsg-colorswatch-swatch.at-orange .atsg-colorswatch-back ul .mediumlabel {
@@ -647,11 +656,11 @@ h3 {
     .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-mainswatch {
       background: #FF5050; }
     .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-tint25 {
-      background: #ff9d9d; }
+      background: #ffdada; }
     .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-tint50 {
-      background: #ffd0d0; }
+      background: #ffacac; }
     .atsg-colorswatch-swatch.at-red .atsg-colorswatch-front-tint75 {
-      background: white; }
+      background: #ff7e7e; }
   .atsg-colorswatch-swatch.at-red .atsg-colorswatch-back {
     background: #ffe9e9; }
     .atsg-colorswatch-swatch.at-red .atsg-colorswatch-back ul .mediumlabel {
@@ -665,11 +674,11 @@ h3 {
     .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-mainswatch {
       background: #3E3F3F; }
     .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-tint25 {
-      background: #646666; }
+      background: #d7d8d8; }
     .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-tint50 {
-      background: #7d7f7f; }
+      background: #a4a5a5; }
     .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-front-tint75 {
-      background: #979999; }
+      background: #717272; }
   .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-back {
     background: #e4e4e4; }
     .atsg-colorswatch-swatch.at-slate .atsg-colorswatch-back ul .mediumlabel {
