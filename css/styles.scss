@@ -192,7 +192,7 @@ p {
 
 h1 {
 	font-size: 42px;
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1024px) {
 				& {
 					font-size: 68px
 				}
@@ -201,7 +201,7 @@ h1 {
 
 h2 {
 	font-size: 34px;
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1024px) {
 				& {
 					font-size: 55px
 				}
@@ -210,7 +210,7 @@ h2 {
 
 h3 {
 	font-size: 26px;
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 1024px) {
 				& {
 					font-size: 42px
 				}
@@ -238,7 +238,7 @@ h3 {
 	-webkit-transition:300ms padding;
 	        transition:300ms padding;
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 440px) {
 				& {
 					display:none;
 				}
@@ -249,6 +249,16 @@ h3 {
 		color: $at-slate;
 		text-decoration: none;
 	}
+
+	a.desktop-item {
+		@media screen and (max-width: 800px) {
+				& {
+					display:none;
+				}
+	}
+
+	}
+	
 
 	.main-navigation-wrapper {
 		max-width: 960px;
@@ -316,13 +326,38 @@ h3 {
 	padding:1.3em 1em;
 }
 
+.secondary-nav {
+
+		list-style: none;
+		margin:0;
+		padding:0;
+
+		li {
+			display:inline-block;
+			margin:0;
+			padding:0;
+
+			a{ 
+				color:$at-blue; 
+				text-decoration: none;
+			}
+		}
+}
+
+
+
 .atsg-fullwidth-section {
+
+
+
 	overflow: hidden;
 
 	.textwrapper {
 		max-width: 960px;
 		margin:12em auto;
 		padding:0 2em;
+
+		
 
 		@media screen and (max-width: 640px) {
 				& {
@@ -509,6 +544,9 @@ h3 {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		background:white;
+		border-radius: 3px;
+		box-shadow: 0px 0x 0px 2px rgba(0,0,0,.1);
 
 		@media screen and (max-width: 640px) {
 		& {
@@ -1447,6 +1485,44 @@ a.button {
 	-webkit-columns:2;
 	   -moz-columns:2;
 	        columns:2;
+}
+
+@-webkit-keyframes scrolltobuild {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.illustrations {
+
+	img{
+		width:100%;
+		height:auto;
+	}
+
+	.device-illustration {
+		max-width: 800px;
+		width:80%;
+		margin:0 auto;
+		display:block;
+		padding:4em 0;
+	}
+
+	.illustration-gifs {
+		img{
+			width:50%;
+			float:left;
+			display:block;
+
+			@media screen and (max-width: 800px) {
+				& {
+					width:100%;
+				}
+			}
+		}
+		
+	}
+
+
 }
 
 

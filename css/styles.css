@@ -107,19 +107,19 @@ p {
 
 h1 {
   font-size: 42px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     h1 {
       font-size: 68px; } }
 
 h2 {
   font-size: 34px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     h2 {
       font-size: 55px; } }
 
 h3 {
   font-size: 26px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     h3 {
       font-size: 42px; } }
 
@@ -140,12 +140,15 @@ h3 {
   padding: 1em 1em;
   -webkit-transition: 300ms padding;
   transition: 300ms padding; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 440px) {
     .main-navigation {
       display: none; } }
   .main-navigation a {
     color: #3E3F3F;
     text-decoration: none; }
+  @media screen and (max-width: 800px) {
+    .main-navigation a.desktop-item {
+      display: none; } }
   .main-navigation .main-navigation-wrapper {
     max-width: 960px;
     margin: 0 auto; }
@@ -181,6 +184,18 @@ h3 {
 
 .main-navigation:hover {
   padding: 1.3em 1em; }
+
+.secondary-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .secondary-nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    .secondary-nav li a {
+      color: #0088F7;
+      text-decoration: none; }
 
 .atsg-fullwidth-section {
   overflow: hidden; }
@@ -310,7 +325,10 @@ h3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 0x 0px 2px rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 640px) {
     .atsg-colorswatch-download {
       flex-direction: column; } }
@@ -921,3 +939,25 @@ a.button {
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2; }
+
+@-webkit-keyframes scrolltobuild {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.illustrations img {
+  width: 100%;
+  height: auto; }
+.illustrations .device-illustration {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding: 4em 0; }
+.illustrations .illustration-gifs img {
+  width: 50%;
+  float: left;
+  display: block; }
+  @media screen and (max-width: 800px) {
+    .illustrations .illustration-gifs img {
+      width: 100%; } }

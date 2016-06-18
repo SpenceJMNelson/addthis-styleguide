@@ -55,3 +55,25 @@ $(function() {
 });
 
 });
+
+$(document).ready(function () {
+    $('#logos').waypoint(function (direction) {
+        if (direction == 'down') $('#logos').toggleClass("buildin");
+        else {
+            $('#logos').toggleClass("buildin");
+        }
+    }, {
+    	offset: '100%'
+    });
+});
+
+$(document).ready(function () {
+    $('#colors').waypoint(function (direction) {
+        if (direction == 'down') $('#colors').toggleClass("buildin");
+        else {
+            $('#colors').toggleClass("buildin");
+        }
+    }, {
+    	offset: '100%'
+    });
+});
